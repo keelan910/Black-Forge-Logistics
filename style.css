@@ -340,6 +340,58 @@ section h2 {
 
 .info-list {
   list-style: none;
+/* Responsive navigation */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+  .nav-logo img {
+    height: 30px;
+  }
+}
+
+/* Form styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: none;
+}
+
+form button,
+form input[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    background-color: #5fa8d3;
+    color: #101134;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #86c5e8;
+}
+
   padding-left: 0;
   color: #cdd3e0;
 }
