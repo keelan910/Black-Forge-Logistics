@@ -13,91 +13,76 @@
       <ul class="nav-links">
         <li><a href="index.html#features">Features</a></li>
         <li><a href="index.html#loads">Load Board</a></li>
-        <li><a href="index.html#advantage">Why Us</a></li>
+        <li><a href="index.html#why">Why Us</a></li>
         <li><a href="index.html#pricing">Pricing</a></li>
         <li><a href="shipper.html">Shippers</a></li>
         <li><a href="carrier.html">Carriers</a></li>
+        <li><a href="ai.html">AI Strategy</a></li>
         <li><a href="index.html#contact">Contact</a></li>
-                    <li><a href="ai.html">AI Strategy</a></li>
       </ul>
-                  
     </div>
   </nav>
 
   <header class="hero-section">
-    <div class="hero-content">
+    <div class="hero-overlay">
       <h1>Grow with Us</h1>
-      <p>Access high-paying loads, AI-driven matching, and dedicated support.</p>
+      <p>Access high‑paying loads, AI‑driven matching and dedicated support.</p>
     </div>
   </header>
 
-  <section class="pricing-section" style="padding-top: 2rem;">
+  <section class="pricing-section">
     <h2>Carrier Subscriptions</h2>
+    <p class="gating-message">Choose a plan to unlock the load board and start booking freight today.</p>
     <div class="pricing-grid">
       <div class="pricing-card">
-        <h3>Starter</h3>
-        <p>$0 / month</p>
-        <ul>
-          <li>Limited load access</li>
-          <li>Standard payment terms</li>
-          <li>Email support</li>
-        </ul>
-      </div>
-      <div class="pricing-card">
-        <h3>Pro</h3>
-        <p>$29 / month</p>
+        <h3>Basic</h3>
+        <p class="price">$15 / month</p>
         <ul>
           <li>Unlimited load access</li>
           <li>AI load recommendations</li>
-          <li>Fuel discounts</li>
-          <li>Priority support</li>
+          <li>Email support</li>
         </ul>
+        <a href="#subscribe" class="btn">Choose Basic</a>
+      </div>
+      <div class="pricing-card">
+        <h3>Pro</h3>
+        <p class="price">$50 / month</p>
+        <ul>
+          <li>Priority access to premium loads</li>
+          <li>Dedicated dispatcher</li>
+          <li>Fuel discounts & analytics</li>
+        </ul>
+        <a href="#subscribe" class="btn">Choose Pro</a>
       </div>
       <div class="pricing-card">
         <h3>Enterprise</h3>
-        <p>Custom</p>
+        <p class="price">Custom</p>
         <ul>
-          <li>Dedicated dispatcher</li>
-          <li>Customized payment terms</li>
-          <li>Premium loads</li>
-          <li>Advanced analytics</li>
+          <li>Custom integrations & features</li>
+          <li>Premium compliance & safety tools</li>
+          <li>Dedicated success manager</li>
         </ul>
+        <a href="mailto:blackforgelogistics@gmail.com" class="btn">Contact Sales</a>
       </div>
     </div>
   </section>
 
-  <section style="padding-top: 2rem;">
-    <h2 style="text-align:center;color:#ffffff;">Join Our Carrier Network</h2>
-    <form id="carrierForm" class="onboard-form" style="max-width:600px;margin:0 auto;">
-      <label for="carrierName">Carrier Name</label>
-      <input type="text" id="carrierName" required>
-      <label for="carrierEmail">Email</label>
-      <input type="email" id="carrierEmail" required>
-      <label for="mcNumber">MC Number</label>
-      <input type="text" id="mcNumber" required>
-      <label for="equipment">Primary Equipment</label>
-      <input type="text" id="equipment" required>
-      <button type="submit" class="btn-primary">Join Now</button>
+  <section id="subscribe" class="contact-section">
+    <h2>Join Our Carrier Network</h2>
+    <form action="mailto:blackforgelogistics@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="carrierName" placeholder="Carrier Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="mcNumber" placeholder="MC Number" required>
+      <input type="text" name="equipment" placeholder="Primary Equipment" required>
+      <textarea name="plan" placeholder="Desired Plan (Basic, Pro, Enterprise)" required></textarea>
+      <button type="submit" class="btn">Submit & Pay</button>
     </form>
-    <p style="max-width:800px;margin:1rem auto;color:#cdd3e0;text-align:center;">Our AI platform will recommend loads tailored to your preferences, helping maximize your profitability and reduce empty miles.</p>
+    <p>Our team will send you a payment link and activate your account once payment is received.</p>
   </section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
-      <div class="social-links">
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
-        <a href="#">Facebook</a>
-      </div>
-    </div>
+  <footer>
+    <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
+    <p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
   </footer>
-
-  <script>
-    document.getElementById('carrierForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      alert('Thanks for joining! We will reach out with next steps.');
-    });
-  </script>
 </body>
 </html>

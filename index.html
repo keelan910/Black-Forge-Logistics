@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Black Forge Logistics - AI-Driven Load Board</title>
+  <title>Black Forge Logistics – AI-Driven Logistics Platform</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
@@ -14,124 +14,134 @@
       <ul class="nav-links">
         <li><a href="#features">Features</a></li>
         <li><a href="#loads">Load Board</a></li>
-        <li><a href="#advantage">Why Us</a></li>
+        <li><a href="#why">Why Us</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="shipper.html">Shippers</a></li>
         <li><a href="carrier.html">Carriers</a></li>
-                    <li><a href="ai.html">AI Strategy</a></li>
+        <li><a href="ai.html">AI Strategy</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <header class="hero-section">
-    <div class="hero-content">
-      <h1>AI‑Powered Logistics Solutions</h1>
-      <p>Supercharge your supply chain with predictive analytics, real‑time visibility, and seamless load booking.</p>
-      <a href="#loads" class="btn-primary">Explore Load Board</a>
+    <div class="hero-overlay">
+      <h1>AI‑Driven Logistics Platform</h1>
+      <p>Transforming North American freight with predictive analytics, real-time visibility and automated workflows.</p>
+      <a href="#loads" class="btn">Explore Load Board</a>
     </div>
   </header>
 
   <section id="features" class="features-section">
-    <h2>Powerful Features</h2>
-    <div class="features-grid">
-      <div class="feature-item">
+    <h2>Next‑Gen Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
         <h3>Predictive Matching</h3>
-        <p>Our AI engine connects the right load to the right carrier using historical data and machine learning.</p>
+        <p>Our machine‑learning engine predicts the perfect carrier for each load, improving utilization and reducing empty miles.</p>
       </div>
-      <div class="feature-item">
+      <div class="feature-card">
         <h3>Dynamic Pricing</h3>
-        <p>Stay competitive with real‑time market rates and automated rate optimization.</p>
+        <p>Stay ahead with real‑time market rates and automated rate optimization by lane and equipment type.</p>
       </div>
-      <div class="feature-item">
-        <h3>End‑to‑End Visibility</h3>
-        <p>Track shipments from pickup to delivery with live updates and proactive alerts.</p>
+      <div class="feature-card">
+        <h3>Smart Routing & Sustainability</h3>
+        <p>AI optimizes routes for speed, cost and carbon footprint, providing sustainability metrics for every shipment.</p>
       </div>
-      <div class="feature-item">
-        <h3>Automated Documents</h3>
-        <p>Generate bills of lading, invoices, and proof of delivery automatically, reducing manual workload.</p>
+      <div class="feature-card">
+        <h3>Autonomous Dispatch</h3>
+        <p>Automated workflows handle tendering, paperwork and status updates so you can focus on growth.</p>
+      </div>
+      <div class="feature-card">
+        <h3>24/7 AI Assistant</h3>
+        <p>Chat with our virtual assistant to book loads, track shipments and get instant answers anytime.</p>
       </div>
     </div>
   </section>
 
   <section id="loads" class="loads-section">
     <h2>Available Loads</h2>
-    <input type="text" id="searchInput" placeholder="Search by city, state, or equipment" class="search-input">
+    <p class="gating-message">Carrier subscriptions are required to access the full load board. Choose a plan below to unlock unlimited loads.</p>
+    <input type="text" id="searchInput" placeholder="Search loads...">
     <table id="loadsTable">
       <thead>
         <tr>
           <th>Origin</th>
           <th>Destination</th>
           <th>Equipment</th>
-          <th>Weight</th>
           <th>Rate</th>
           <th>Action</th>
         </tr>
       </thead>
-      <tbody>
-        <!-- loads inserted by script.js -->
+      <tbody id="tableBody">
+        <!-- Sample loads generated via script.js -->
       </tbody>
     </table>
   </section>
 
-  <section id="advantage" class="advantages-section">
-    <h2>Why Choose Black Forge Logistics?</h2>
-    <ul class="advantages-list">
-      <li><strong>AI‑Driven Decisions:</strong> Our models analyze millions of data points to optimize routes and reduce empty miles.</li>
-      <li><strong>Vast Carrier Network:</strong> Access thousands of vetted carriers ensuring capacity even in peak seasons.</li>
-      <li><strong>Customizable Solutions:</strong> Tailor workflows, rules and notifications to your unique business requirements.</li>
-      <li><strong>Sustainability Focus:</strong> We reduce emissions through smart route planning and capacity utilization.</li>
-      <li><strong>Dedicated Support:</strong> 24/7 support from logistics experts ready to assist carriers and shippers.</li>
+  <section id="why" class="advantages-section">
+    <h2>Why Choose Black Forge?</h2>
+    <ul class="adv-list">
+      <li><strong>AI Assistant:</strong> 24/7 chatbot helps you book, track and troubleshoot shipments.</li>
+      <li><strong>Sustainability Dashboard:</strong> Monitor carbon emissions and choose greener routes.</li>
+      <li><strong>Digital Contracts & Compliance:</strong> Generate compliant digital bills of lading, rate confirmations and safety documentation.</li>
+      <li><strong>Real‑Time Analytics:</strong> Visualize market rates, capacity trends and lane performance in one dashboard.</li>
     </ul>
   </section>
 
   <section id="pricing" class="pricing-section">
-    <h2>Flexible Pricing</h2>
+    <h2>Carrier Pricing</h2>
     <div class="pricing-grid">
       <div class="pricing-card">
-        <h3>Starter</h3>
-        <p>$0 / month</p>
+        <h3>Basic</h3>
+        <p class="price">$15 / month</p>
         <ul>
-          <li>Post up to 5 loads per month</li>
-          <li>Basic load board access</li>
+          <li>Unlimited load board access</li>
+          <li>AI load recommendations</li>
           <li>Email support</li>
         </ul>
-        <a href="shipper.html" class="btn-secondary">Get Started</a>
+        <a href="carrier.html" class="btn">Get Started</a>
       </div>
       <div class="pricing-card">
         <h3>Pro</h3>
-        <p>$49 / month</p>
+        <p class="price">$50 / month</p>
         <ul>
-          <li>Unlimited load posting</li>
-          <li>AI recommendations</li>
-          <li>Real‑time tracking</li>
-          <li>Priority support</li>
+          <li>Priority access to premium loads</li>
+          <li>Dedicated dispatcher & support</li>
+          <li>Fuel discounts & analytics</li>
         </ul>
-        <a href="carrier.html" class="btn-secondary">Subscribe</a>
+        <a href="carrier.html" class="btn">Upgrade</a>
       </div>
       <div class="pricing-card">
         <h3>Enterprise</h3>
-        <p>Contact us</p>
+        <p class="price">Custom</p>
         <ul>
-          <li>Dedicated account manager</li>
-          <li>Custom integrations</li>
-          <li>Advanced analytics</li>
-          <li>Tailored AI models</li>
+          <li>Custom integrations & features</li>
+          <li>Premium compliance & safety tools</li>
+          <li>Dedicated success manager</li>
         </ul>
-        <a href="#contact" class="btn-secondary">Contact Sales</a>
+        <a href="#contact" class="btn">Contact Sales</a>
       </div>
+    </div>
+    <div class="shipper-pricing">
+      <h2>Shippers: Free to Use</h2>
+      <p>Post loads and get matched instantly — no fees, ever. Our AI does the work for you.</p>
+      <a href="shipper.html" class="btn">Onboard as Shipper</a>
     </div>
   </section>
 
-  <footer id="contact" class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
-      <div class="social-links">
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
-        <a href="#">Facebook</a>
-      </div>
-    </div>
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form action="mailto:blackforgelogistics@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="How can we help you?" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
+    <p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
   </footer>
 </body>
 </html>

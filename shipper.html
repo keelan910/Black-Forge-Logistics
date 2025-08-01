@@ -13,62 +13,40 @@
       <ul class="nav-links">
         <li><a href="index.html#features">Features</a></li>
         <li><a href="index.html#loads">Load Board</a></li>
-        <li><a href="index.html#advantage">Why Us</a></li>
+        <li><a href="index.html#why">Why Us</a></li>
         <li><a href="index.html#pricing">Pricing</a></li>
-        
-                    <li><a href="shipper.html">Shippers</a></li>
-            <li><a href="carrier.html">Carriers</a></li>
-            <li><a href="ai.html">AI Strategy</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="shipper.html">Shippers</a></li>
+        <li><a href="carrier.html">Carriers</a></li>
+        <li><a href="ai.html">AI Strategy</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
   <header class="hero-section">
-    <div class="hero-content">
+    <div class="hero-overlay">
       <h1>Become a Shipper</h1>
-      <p>Join Black Forge Logistics and let our AI match your freight with the perfect carriers.</p>
+      <p>Join Black Forge Logistics for free and let our AI match your freight with the perfect carriers.</p>
     </div>
   </header>
 
-  <section class="form-section" style="padding-top: 2rem;">
+  <section class="contact-section">
     <h2>Shipper Onboarding</h2>
-    <form id="shipperForm" class="onboard-form">
-      <label for="company">Company Name</label>
-      <input type="text" id="company" required>
-      <label for="contactName">Contact Name</label>
-      <input type="text" id="contactName" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" required>
-      <label for="phone">Phone</label>
-      <input type="tel" id="phone" required>
-      <label for="freightType">Freight Type</label>
-      <input type="text" id="freightType" required>
-      <label for="volume">Estimated Monthly Shipments</label>
-      <input type="number" id="volume" required>
-      <button type="submit" class="btn-primary">Submit</button>
+    <form action="mailto:blackforgelogistics@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="company" placeholder="Company Name" required>
+      <input type="text" name="contact" placeholder="Contact Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <input type="text" name="freightType" placeholder="Freight Type" required>
+      <input type="number" name="volume" placeholder="Estimated Monthly Shipments" required>
+      <button type="submit" class="btn">Onboard Now</button>
     </form>
+    <p>Once submitted, our AI onboarding engine will analyze your shipping patterns and connect you with the best carriers in our network. A representative will reach out to guide your setup.</p>
   </section>
 
-  <section style="max-width: 800px; margin: 0 auto; color: #cdd3e0; padding-top: 2rem;">
-    <p>Once submitted, our AI onboarding engine will analyze your shipping patterns and connect you with the best carriers in our network. A representative will reach out to guide your setup and answer any questions.</p>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
-      <div class="social-links">
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
-        <a href="#">Facebook</a>
-      </div>
-    </div>
+  <footer>
+    <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
+    <p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
   </footer>
-
-  <script>
-    document.getElementById('shipperForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      alert('Thanks for signing up! Our team will contact you shortly.');
-    });
-  </script>
 </body>
 </html>
