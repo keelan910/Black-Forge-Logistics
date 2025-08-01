@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO meta tags -->
+    <meta name="description" content="Get in touch with Black Forge Logistics. Reach out with your logistics questions, partnership inquiries or feedback. We're ready to help you transform your supply chain." />
+    <meta name="keywords" content="contact Black Forge, logistics support, freight questions, partnership inquiries" />
+    <meta name="author" content="Black Forge Logistics" />
+    <title>Contact Us – Black Forge Logistics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-C2Qwrp+tuEojR1L/IWHWwFQsDZvYSLV0uCZcFBNbqz+XKptR9J/5fKdIOXWfdjv3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html">Black Forge</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="shipper.html">Shippers</a></li>
+            <li class="nav-item"><a class="nav-link" href="carrier.html">Carriers</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-light ms-2" href="login.html"
+                >Portal Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-5 mt-5 bg-light text-center">
+      <div class="container">
+        <h1 class="fw-bold">Get in Touch</h1>
+        <p class="lead mb-0">
+          Have questions or want to learn more? We're here to help.
+        </p>
+      </div>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold text-center mb-4">Send Us a Message</h2>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="contactName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contactName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contactEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contactEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="contactMessage"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+            <div id="contactSuccess" class="mt-4" style="display: none;">
+              <div class="alert alert-success" role="alert">
+                Your message has been sent! We'll be in touch soon.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <p class="mb-2">&copy; 2025 Black Forge Logistics. All rights reserved.</p>
+        <div class="social-links mb-3">
+          <a
+            href="#"
+            class="text-light me-3"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin fa-lg"></i
+          ></a>
+          <a
+            href="#"
+            class="text-light me-3"
+            aria-label="Twitter"
+            ><i class="fa-brands fa-x-twitter fa-lg"></i
+          ></a>
+          <a
+            href="#"
+            class="text-light"
+            aria-label="Instagram"
+            ><i class="fa-brands fa-instagram fa-lg"></i
+          ></a>
+        </div>
+        <small>Reach out anytime – we're always ready to partner with you.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FnhGGHkjZKdU5g5OVwOB1p5MNDoAuCEi0aKBslZx2drFJv2Y87ZdLLAVnYyKyS4N"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

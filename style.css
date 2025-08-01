@@ -1,0 +1,93 @@
+/*
+ * Custom styles for Black Forge Logistics
+ * This file supplements the Bootstrap framework to establish a modern,
+ * sleek look consistent with the brand. Colors and spacing can be adjusted
+ * as needed to suit personal preferences.
+ */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  color: #fff;
+  background-image: url('assets/hero_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+.hero-section h1 {
+  font-weight: 700;
+  color: #f8f9fa;
+}
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #e1e9ef;
+}
+
+/* Cards and Icons */
+.service-icon i,
+.why-section i {
+  transition: transform 0.3s ease;
+}
+.service-icon i:hover,
+.why-section i:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer .social-links a {
+  transition: color 0.3s ease;
+}
+footer .social-links a:hover {
+  color: #0d6efd;
+}
+
+/* Forms */
+form .form-control,
+form .form-select {
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+form .form-control:focus,
+form .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* CTA Section */
+#cta {
+  background-color: #f8f9fa;
+}
+#cta h2 {
+  font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
