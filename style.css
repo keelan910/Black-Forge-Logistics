@@ -491,3 +491,31 @@
     flex-wrap: wrap;
   }
 }
+
+/* Custom overrides */
+.nav-container {
+  padding: 0.5rem 1rem;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #e5e9f0;
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+.features-section, .loads-section, .advantages-section,
+.pricing-section, .contact-section, .faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.feature-grid, .pricing-grid, .adv-list {
+  justify-content: center;
+}
+.hero-section .hero-overlay {
+  text-align: center;
+}
