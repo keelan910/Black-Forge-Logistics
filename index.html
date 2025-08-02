@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Black Forge Logistics – AI-Driven Logistics Platform</title>
+  <title>Black Forge Logistics – AI‑Driven Logistics Platform</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
@@ -11,6 +11,7 @@
   <nav class="nav-bar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo"><img src="logo.png" alt="Black Forge Logistics Logo"></a>
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
       <ul class="nav-links">
         <li><a href="#features">Features</a></li>
         <li><a href="#loads">Load Board</a></li>
@@ -19,15 +20,15 @@
         <li><a href="shipper.html">Shippers</a></li>
         <li><a href="carrier.html">Carriers</a></li>
         <li><a href="ai.html">AI Strategy</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
-
   <header class="hero-section">
     <div class="hero-overlay">
       <h1>AI‑Driven Logistics Platform</h1>
-      <p>Transforming North American freight with predictive analytics, real-time visibility and automated workflows.</p>
+      <p>Transforming North American freight with predictive analytics, real‑time visibility and automated workflows.</p>
       <a href="#loads" class="btn">Explore Load Board</a>
     </div>
   </header>
@@ -60,14 +61,15 @@
 
   <section id="loads" class="loads-section">
     <h2>Available Loads</h2>
-    <p class="gating-message">Carrier subscriptions are required to access the full load board. Choose a plan below to unlock unlimited loads.</p>
-    <input type="text" id="searchInput" placeholder="Search loads...">
+    <p class="gating-message">Carrier subscriptions are required to access the full load board. Example loads shown below.</p>
+    <input type="text" id="searchInput" class="search-input" placeholder="Search loads...">
     <table id="loadsTable">
       <thead>
         <tr>
           <th>Origin</th>
           <th>Destination</th>
           <th>Equipment</th>
+          <th>Weight</th>
           <th>Rate</th>
           <th>Action</th>
         </tr>
@@ -97,29 +99,37 @@
         <ul>
           <li>Unlimited load board access</li>
           <li>AI load recommendations</li>
+          <li>Real‑time tracking & sustainability scores</li>
           <li>Email support</li>
         </ul>
-        <a href="carrier.html" class="btn">Get Started</a>
+        <a href="https://buy.stripe.com/test_basic" class="btn">Subscribe Basic</a>
       </div>
       <div class="pricing-card">
         <h3>Pro</h3>
         <p class="price">$50 / month</p>
         <ul>
+          <li>Everything in Basic</li>
           <li>Priority access to premium loads</li>
+          <li>Dynamic lane pricing & analytics</li>
+          <li>Fuel discounts & cashback</li>
+          <li>Predictive maintenance alerts</li>
           <li>Dedicated dispatcher & support</li>
-          <li>Fuel discounts & analytics</li>
+          <li>Digital document management</li>
         </ul>
-        <a href="carrier.html" class="btn">Upgrade</a>
+        <a href="https://buy.stripe.com/test_pro" class="btn">Subscribe Pro</a>
       </div>
       <div class="pricing-card">
         <h3>Enterprise</h3>
         <p class="price">Custom</p>
         <ul>
-          <li>Custom integrations & features</li>
-          <li>Premium compliance & safety tools</li>
-          <li>Dedicated success manager</li>
+          <li>All Pro features</li>
+          <li>Custom integrations & APIs</li>
+          <li>Private load board & white‑label solutions</li>
+          <li>Advanced analytics & forecasting</li>
+          <li>Dedicated account manager</li>
+          <li>Full compliance & safety suite</li>
         </ul>
-        <a href="#contact" class="btn">Contact Sales</a>
+        <a href="mailto:blackforgelogistics@gmail.com" class="btn">Contact Sales</a>
       </div>
     </div>
     <div class="shipper-pricing">
@@ -139,9 +149,14 @@
     </form>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
-    <p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
+      <div class="social-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

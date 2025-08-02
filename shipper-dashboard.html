@@ -1,86 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipper Dashboard | Black Forge Logistics</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-      /* Dashboard-specific tweaks */
-      .dashboard-section {
-        max-width: 800px;
-        margin: 0 auto;
-        background-color: #1b1c44;
-        padding: 2rem;
-        border-radius: 8px;
-        color: #e5e9f0;
-      }
-      .dashboard-section h2 {
-        color: #5fa8d3;
-        margin-bottom: 1rem;
-        text-align: center;
-      }
-      .dashboard-section form input,
-      .dashboard-section form textarea,
-      .dashboard-section form select {
-        width: 100%;
-        padding: 0.5rem;
-        margin-bottom: 0.75rem;
-        border: none;
-        border-radius: 4px;
-      }
-      .dashboard-section form button {
-        background-color: #5fa8d3;
-        color: #101134;
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: 600;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="nav-bar">
-      <div class="nav-container">
-        <a href="index.html" class="nav-logo"><img src="logo.png" alt="Black Forge Logistics Logo"></a>
-        <ul class="nav-links">
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="index.html#loads">Load Board</a></li>
-          <li><a href="index.html#why">Why Us</a></li>
-          <li><a href="index.html#pricing">Pricing</a></li>
-          <li><a href="shipper.html" class="active-link">Shippers</a></li>
-          <li><a href="carrier.html">Carriers</a></li>
-          <li><a href="ai.html">AI Strategy</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <header class="hero-section">
-      <div class="hero-overlay">
-        <h1>Your Shipper Dashboard</h1>
-        <p>Post your loads quickly and let our AI match them to the best carriers.</p>
-      </div>
-    </header>
-    <section class="dashboard-section">
-      <h2>Post a New Load</h2>
-      <!-- Shipper load submission form -->
-      <form action="mailto:blackforgelogistics@gmail.com" method="post" enctype="text/plain" onsubmit="alert('Your load has been submitted! Our team will confirm and list it shortly.');">
-        <input type="text" name="pickup" placeholder="Pickup Location" required>
-        <input type="text" name="destination" placeholder="Destination" required>
-        <input type="text" name="freight" placeholder="Freight Type" required>
-        <input type="text" name="equipment" placeholder="Required Equipment" required>
-        <input type="number" name="weight" placeholder="Weight (lbs)" required>
-        <input type="date" name="shipDate" placeholder="Ship Date" required>
-        <input type="text" name="rate" placeholder="Offered Rate (optional)">
-        <textarea name="notes" placeholder="Additional Notes" rows="4"></textarea>
-        <button type="submit">Submit Load</button>
-      </form>
-      <p style="margin-top: 1rem; text-align:center;">After submitting, your load will appear on the marketplace for subscribed carriers. Our AI will optimize matching based on your requirements.</p>
-    </section>
-    <footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipper Dashboard | Black Forge Logistics</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Dashboard-specific tweaks */
+    .dashboard-section {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #1b1c44;
+      padding: 2rem;
+      border-radius: 8px;
+      color: #e5e9f0;
+    }
+    .dashboard-section h2 {
+      color: #5fa8d3;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .dashboard-section form input,
+    .dashboard-section form textarea,
+    .dashboard-section form select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 0.75rem;
+      border: none;
+      border-radius: 4px;
+    }
+    .dashboard-section form button {
+      background-color: #5fa8d3;
+      color: #101134;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="Black Forge Logistics Logo"></a>
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#loads">Load Board</a></li>
+        <li><a href="index.html#why">Why Us</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="shipper.html" class="active-link">Shippers</a></li>
+        <li><a href="carrier.html">Carriers</a></li>
+        <li><a href="ai.html">AI Strategy</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="hero-section">
+    <div class="hero-overlay">
+      <h1>Your Shipper Dashboard</h1>
+      <p>Post your loads quickly and let our AI match them to the best carriers.</p>
+    </div>
+  </header>
+  <section class="dashboard-section">
+    <h2>Post a New Load</h2>
+    <!-- Shipper load submission form -->
+    <form action="mailto:blackforgelogistics@gmail.com" method="post" enctype="text/plain" onsubmit="alert('Your load has been submitted! Our team will confirm and list it shortly.');">
+      <input type="text" name="pickup" placeholder="Pickup Location" required>
+      <input type="text" name="destination" placeholder="Destination" required>
+      <input type="text" name="freight" placeholder="Freight Type" required>
+      <input type="text" name="equipment" placeholder="Required Equipment" required>
+      <input type="number" name="weight" placeholder="Weight (lbs)" required>
+      <input type="date" name="shipDate" placeholder="Ship Date" required>
+      <input type="text" name="rate" placeholder="Offered Rate (optional)">
+      <textarea name="notes" placeholder="Additional Notes" rows="4"></textarea>
+      <button type="submit">Submit Load</button>
+    </form>
+    <p style="margin-top: 1rem; text-align:center;">After submitting, your load will appear on the marketplace for subscribed carriers. Our AI will optimize matching based on your requirements.</p>
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
       <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
-      <p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
-  </body>
+      <div class="social-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

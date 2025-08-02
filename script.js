@@ -1,3 +1,13 @@
+// Toggle mobile navigation menu
+toggleMenu = function() {
+  const navLinks = document.querySelector('.nav-links');
+  if (navLinks) {
+    navLinks.classList.toggle('active');
+  }
+};
+
+// Load board script
+
 document.addEventListener('DOMContentLoaded', () => {
   // Sample load data for the demo load board
   const loads = [
@@ -14,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Render the table rows based on the provided data
   function renderTable(data) {
+    if (!tableBody) return;
     tableBody.innerHTML = '';
     data.forEach(load => {
       const row = document.createElement('tr');
@@ -33,20 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTable(loads);
 
   // Filter the table when the user types in the search input
-  searchInput.addEventListener('input', () => {
-    const query = searchInput.value.trim().toLowerCase();
-    const filtered = loads.filter(load =>
-      load.origin.toLowerCase().includes(query) ||
-      load.destination.toLowerCase().includes(query) ||
-      load.equipment.toLowerCase().includes(query)
-    );
-    renderTable(filtered);
-  });
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.trim().toLowerCase();
+      const filtered = loads.filter(load =>
+        load.origin.toLowerCase().includes(query) ||
+        load.destination.toLowerCase().includes(query) ||
+        load.equipment.toLowerCase().includes(query)
+      );
+      renderTable(filtered);
+    });
+  }
 
   // Handle booking button clicks
-  tableBody.addEventListener('click', (event) => {
-    if (event.target.classList.contains('book-btn')) {
-      alert('Booking request received! An agent will reach out shortly.');
-    }
-  });
+  if (tableBody) {
+    tableBody.addEventListener('click', (event) => {
+      if (event.target.classList.contains('book-btn')) {
+        alert('Booking request received! An agent will reach out shortly.');
+      }
+    });
+  }
 });

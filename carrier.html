@@ -10,14 +10,16 @@
   <nav class="nav-bar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo"><img src="logo.png" alt="Black Forge Logistics Logo"></a>
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
       <ul class="nav-links">
         <li><a href="index.html#features">Features</a></li>
         <li><a href="index.html#loads">Load Board</a></li>
         <li><a href="index.html#why">Why Us</a></li>
         <li><a href="index.html#pricing">Pricing</a></li>
         <li><a href="shipper.html">Shippers</a></li>
-        <li><a href="carrier.html">Carriers</a></li>
+        <li><a href="carrier.html" class="active-link">Carriers</a></li>
         <li><a href="ai.html">AI Strategy</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </div>
@@ -38,29 +40,37 @@
         <h3>Basic</h3>
         <p class="price">$15 / month</p>
         <ul>
-          <li>Unlimited load access</li>
+          <li>Unlimited load board access</li>
           <li>AI load recommendations</li>
+          <li>Real‑time tracking & sustainability scores</li>
           <li>Email support</li>
         </ul>
-        <a href="#subscribe" class="btn">Choose Basic</a>
+        <a href="https://buy.stripe.com/test_basic" class="btn">Subscribe Basic</a>
       </div>
       <div class="pricing-card">
         <h3>Pro</h3>
         <p class="price">$50 / month</p>
         <ul>
+          <li>Everything in Basic</li>
           <li>Priority access to premium loads</li>
-          <li>Dedicated dispatcher</li>
-          <li>Fuel discounts & analytics</li>
+          <li>Dynamic lane pricing & analytics</li>
+          <li>Fuel discounts & cashback</li>
+          <li>Predictive maintenance alerts</li>
+          <li>Dedicated dispatcher & support</li>
+          <li>Digital document management</li>
         </ul>
-        <a href="#subscribe" class="btn">Choose Pro</a>
+        <a href="https://buy.stripe.com/test_pro" class="btn">Subscribe Pro</a>
       </div>
       <div class="pricing-card">
         <h3>Enterprise</h3>
         <p class="price">Custom</p>
         <ul>
-          <li>Custom integrations & features</li>
-          <li>Premium compliance & safety tools</li>
-          <li>Dedicated success manager</li>
+          <li>All Pro features</li>
+          <li>Custom integrations & APIs</li>
+          <li>Private load board & white‑label solutions</li>
+          <li>Advanced analytics & forecasting</li>
+          <li>Dedicated account manager</li>
+          <li>Full compliance & safety suite</li>
         </ul>
         <a href="mailto:blackforgelogistics@gmail.com" class="btn">Contact Sales</a>
       </div>
@@ -77,12 +87,17 @@
       <textarea name="plan" placeholder="Desired Plan (Basic, Pro, Enterprise)" required></textarea>
       <button type="submit" class="btn">Submit & Pay</button>
     </form>
-    <p>Our team will send you a payment link and activate your account once payment is received.</p>
+    <p>Our team will send you a payment link and activate your account once payment is received. Carriers must have an active subscription to view and book loads.</p>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
-    <p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
+      <div class="social-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipper Onboarding | Black Forge Logistics</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <nav class="nav-bar">
-      <div class="nav-container">
-        <a href="index.html" class="nav-logo"><img src="logo.png" alt="Black Forge Logistics Logo"></a>
-        <ul class="nav-links">
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="index.html#loads">Load Board</a></li>
-          <li><a href="index.html#why">Why Us</a></li>
-          <li><a href="index.html#pricing">Pricing</a></li>
-          <li><a href="shipper.html" class="active-link">Shippers</a></li>
-          <li><a href="carrier.html">Carriers</a></li>
-          <li><a href="ai.html">AI Strategy</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <header class="hero-section">
-      <div class="hero-overlay">
-        <h1>Become a Shipper</h1>
-        <p>Join Black Forge Logistics for free and let our AI match your freight with the perfect carriers.</p>
-      </div>
-    </header>
-    <section class="contact-section">
-      <h2>Shipper Onboarding</h2>
-      <form action="mailto:blackforgelogistics@gmail.com" method="post" enctype="text/plain" onsubmit="alert('Thank you for onboarding! Redirecting to your dashboard.'); window.location.href='shipper-dashboard.html';">
-        <input type="text" name="company" placeholder="Company Name" required>
-        <input type="text" name="contact" placeholder="Contact Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phone" placeholder="Phone" required>
-        <input type="text" name="freightType" placeholder="Freight Type" required>
-        <input type="number" name="volume" placeholder="Estimated Monthly Shipments" required>
-        <button type="submit" class="btn">Onboard Now</button>
-      </form>
-      <p>Once submitted, our AI onboarding engine will analyze your shipping patterns and connect you with the best carriers. You will be redirected to your personal dashboard to post loads.</p>
-    </section>
-    <footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipper Onboarding | Black Forge Logistics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="Black Forge Logistics Logo"></a>
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#loads">Load Board</a></li>
+        <li><a href="index.html#why">Why Us</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="shipper.html" class="active-link">Shippers</a></li>
+        <li><a href="carrier.html">Carriers</a></li>
+        <li><a href="ai.html">AI Strategy</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="hero-section">
+    <div class="hero-overlay">
+      <h1>Become a Shipper</h1>
+      <p>Join Black Forge Logistics for free and let our AI match your freight with the perfect carriers.</p>
+    </div>
+  </header>
+  <section class="contact-section">
+    <h2>Shipper Onboarding</h2>
+    <form action="mailto:blackforgelogistics@gmail.com" method="post" enctype="text/plain" onsubmit="alert('Thank you for onboarding! Redirecting to your dashboard.'); window.location.href='shipper-dashboard.html';">
+      <input type="text" name="company" placeholder="Company Name" required>
+      <input type="text" name="contact" placeholder="Contact Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <input type="text" name="freightType" placeholder="Freight Type" required>
+      <input type="number" name="volume" placeholder="Estimated Monthly Shipments" required>
+      <button type="submit" class="btn">Onboard Now</button>
+    </form>
+    <p>Once submitted, our AI onboarding engine will analyze your shipping patterns and connect you with the best carriers. You will be redirected to your personal dashboard to post loads.</p>
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
       <p>&copy; 2025 Black Forge Logistics. All rights reserved.</p>
-      <p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
-  </body>
+      <div class="social-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
