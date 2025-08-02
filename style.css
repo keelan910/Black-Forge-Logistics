@@ -24,14 +24,16 @@
       border-bottom: 1px solid #2a2b54;
     }
 
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.75rem 1.5rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+/* Container for nav contents. Smaller padding for sleeker header */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Reduce padding for a sleeker, smaller header */
+  padding: 0.3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
     .nav-logo img {
       height: 40px;
@@ -49,6 +51,14 @@
       font-weight: 600;
       transition: color 0.3s;
     }
+
+/* Menu toggle icon for mobile nav (three bars) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #e5e9f0;
+}
 
     .nav-links a:hover {
       color: #5fa8d3;
@@ -421,10 +431,11 @@
     }
 
 /* Dropdown Menu Toggle */
+/* Hamburger icon for mobile menu (three bars) */
 .menu-toggle {
   display: none;
-  font-size: 1.5rem;
-  color: #e5fad3;
+  font-size: 2rem;
+  color: #5fa8d3;
   cursor: pointer;
 }
 
@@ -490,32 +501,26 @@
   .nav-container {
     flex-wrap: wrap;
   }
-}
-
-/* Custom overrides */
-.nav-container {
-  padding: 0.5rem 1rem;
-}
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #e5e9f0;
-}
-@media (max-width: 768px) {
+  /* Show menu toggle on small screens */
   .menu-toggle {
     display: block;
   }
 }
+
+/* Center content sections */
 .features-section, .loads-section, .advantages-section,
 .pricing-section, .contact-section, .faq-section {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
+
+/* Center text for cards and grids */
 .feature-grid, .pricing-grid, .adv-list {
   justify-content: center;
 }
+
+/* Adjust hero text alignment */
 .hero-section .hero-overlay {
   text-align: center;
 }
