@@ -29,20 +29,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Reduce padding for a sleeker, smaller header */
-  padding: 0.3rem 1rem;
+  /* Even smaller padding for a more compact header */
+  padding: 0.25rem 0.75rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
     .nav-logo img {
-      height: 40px;
+      /* Slightly reduce logo height for a smaller header */
+      height: 36px;
     }
 
     .nav-links {
       list-style: none;
       display: flex;
       gap: 1.5rem;
+      /* Center nav items in the available space */
+      flex: 1;
+      justify-content: center;
     }
 
     .nav-links a {
@@ -54,10 +58,12 @@
 
 /* Menu toggle icon for mobile nav (three bars) */
 .menu-toggle {
+  /* Show the menu toggle on small screens; hide on large screens via media query below */
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
-  color: #e5e9f0;
+  color: #5fa8d3;
+  margin-left: auto;
 }
 
     .nav-links a:hover {
@@ -437,6 +443,7 @@
   font-size: 2rem;
   color: #5fa8d3;
   cursor: pointer;
+  margin-left: auto;
 }
 
 /* Button styling */
